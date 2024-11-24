@@ -25,6 +25,16 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation 'org.mariadb.jdbc:mariadb-java-client:3.0.8'
+	implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	/*
+		DevTools redémarre automatiquement l'application Spring Boot lorsque des 
+		modifications sont détectées dans les fichiers de code source ou de ressources.
+		Ce qui nous evite alors de devoir redemarrer le l'application manuellement
+		a chaque fois que nous effectuons une modification.
+	*/
+	implementation("org.springframework.boot:spring-boot-devtools")
+
 }
 
 tasks.named('test') {
